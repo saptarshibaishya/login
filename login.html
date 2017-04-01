@@ -1,0 +1,75 @@
+<html>
+<head>
+	<title>LOGIN</title>
+	<style type="text/css">
+	#login{
+		height: 335px;
+		width: 300px;
+		border: 2px solid black;
+		text-align: center;
+		margin-left: 37%;
+		margin-top: 2%;
+		font-family: Comic Sans MS;
+		background-color: yellow;
+
+		/*padding: 10px;*/
+	}
+	body{
+		background: gray;
+	}
+	.align{
+		margin-left: 45%;
+		margin-top: 10%;
+		border: 2px solid black;
+		height: 50px;
+		width: 280px;
+		padding: 10px;
+		background-color: orange;
+		text-align: center;
+		/*font-family: Comic Sans MS;*/
+	}
+	
+	.size{
+		height: 30px;
+		width: 150px;
+		background-color: DarkSlateBlue;
+		color: white;
+		font-family: Comic Sans MS;
+	}
+	</style>
+	
+</head>
+<body>
+	<img class="align" src="https://media.tenor.co/images/ed3cf00e1c90206e943f68d349877690/tenor.gif" style="width:50px;height:50px;">
+	
+	<div id="login">
+	<h1>Sign in to website</h1>
+	<hr>
+	<form onsubmit="myFun()">
+	<h3>username or email</h3>
+	<input type="text" id="userid">
+	<h3>Password</h3>
+	<input type="text" id="Password">
+	<br>
+	<br>
+	<input class="size" type="submit" value="LogIn">
+	</form>
+	</div>
+</body>
+<script type="text/javascript">
+	function myFun(){
+		var name= document.getElementById('userid').value;
+		var Pass= document.getElementById('Password').value;
+		if (name=='' Pass='') {
+			alert('please enter name and Password');
+		}
+		else{
+			alert("welcome "+name);
+
+	}
+
+		
+	}
+	
+</script>
+</html>
